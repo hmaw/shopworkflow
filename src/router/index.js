@@ -1,7 +1,7 @@
 import Vue from 'vue'
 import VueRouter from 'vue-router'
 import Home from '../views/Home.vue'
-import About from "../components/About.vue"
+import ShopAdmin from "../components/ShopAdmin.vue"
 
 Vue.use(VueRouter)
 
@@ -12,9 +12,9 @@ Vue.use(VueRouter)
     component: Home
   },
   {
-    path: '/about',
-	name: 'About',
-	component: About
+    path: '/shopadmin',
+	name: 'ShopAdmin',
+	component: ShopAdmin
   }
 ]
 

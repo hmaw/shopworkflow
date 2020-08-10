@@ -1,15 +1,27 @@
 import Vue from 'vue'
-import Vuex from 'vuex'
+import VueRouter from 'vue-router'
+import Home from '../views/Home.vue'
+import ShopAdmin from "../components/ShopAdmin.vue"
 
-Vue.use(Vuex)
+Vue.use(VueRouter)
 
-export default new Vuex.Store({
-  state: {
+  const routes = [
+  {
+    path: '/',
+    name: 'Home',
+    component: Home
   },
-  mutations: {
-  },
-  actions: {
-  },
-  modules: {
+  {
+    path: '/shopadmin',
+	name: 'ShopAdmin',
+	component: ShopAdmin
   }
+]
+
+const router = new VueRouter({
+  mode: 'history',
+  base: process.env.BASE_URL,
+  routes
 })
+
+export default router
