@@ -1,4 +1,5 @@
 # shopworkflow
+A simple commision workflow admin for projects and shipping
 
 ## Project setup
 ```
